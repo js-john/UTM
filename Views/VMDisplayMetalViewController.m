@@ -134,6 +134,10 @@
     if (self.largeScreen) {
         self.prefersStatusBarHidden = YES;
     }
+    
+    _toolbarAccessoryView.dragEnable = YES;
+    _toolbarAccessoryView.isKeepBounds = NO;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

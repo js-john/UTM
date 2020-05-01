@@ -18,6 +18,7 @@
 #import "UTMVirtualMachineDelegate.h"
 #import "UTMSpiceIODelegate.h"
 #import "CSInput.h"
+#import "WMDragView.h"
 
 @class UTMSpiceIO;
 @class UTMVirtualMachine;
@@ -67,7 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet MTKView *mtkView;
 @property (weak, nonatomic) IBOutlet VMKeyboardView *keyboardView;
 @property (strong, nonatomic) IBOutlet UIInputView *inputAccessoryView;
-@property (strong, nonatomic) IBOutlet UIView *toolbarAccessoryView;
+//@property (strong, nonatomic) IBOutlet UIView *toolbarAccessoryView;
+@property (weak, nonatomic) IBOutlet WMDragView *toolbarAccessoryView;
 @property (nonatomic, assign) BOOL lastDisplayChangeResize;
 @property (weak, nonatomic) IBOutlet UIButton *powerExitButton;
 @property (weak, nonatomic) IBOutlet UIButton *pauseResumeButton;
